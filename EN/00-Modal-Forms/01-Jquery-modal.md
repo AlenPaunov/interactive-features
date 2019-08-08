@@ -249,33 +249,3 @@ div.appeartext {
 <div class='appeartext' >SoftUni</div>
 [/html]
 [/slide]
-
-[slide]
-# Animate CSS
-
-[html]
- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="yourPath/animatedModal.min.js"></script>
-
-<!--Call your modal-->
-    <a id="demo01" href="#animatedModal">DEMO01</a>
-
-    <!--DEMO01-->
-    <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            CLOSE MODAL
-        </div>
-            
-        <div class="modal-content">
-                  <!--Your modal content goes here-->
-        </div>
-    </div>
-    
-  <script>
-  $("#demo01").animatedModal();
-</script>
-
-[/html]
-[/slide]
