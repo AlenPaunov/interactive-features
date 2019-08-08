@@ -46,7 +46,7 @@ p.custom-p {
     
  <!-- Modal HTML embedded directly into document -->
     <div id="fademodal" class="modal">
-        <p>That was some smooth fade effect. I like it a lot!</p>
+        <p class="custom-p">That was some smooth fade effect. I like it a lot!</p>
         <a href="#" rel="modal:close">Close</a>
     </div>
 
