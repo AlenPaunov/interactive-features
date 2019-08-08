@@ -17,23 +17,21 @@ p.custom-p {
 }
 </style>
 
-<!-- Modal HTML embedded directly into document -->
-<div id="fademodal" class="">
-<p>That was some smooth fade effect. I like it a lot!</p>
-<a href="#" rel="modal:close">Close</a>
-</div>
+ <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-<!-- Link to open the modal -->
-<p><a href="#fademodal">Open Modal</a></p>
-
-<script type="text/javascript" charset="utf-8">
-$(function () {
- $('a[href="#fademodal"]').click(function (event) {
- event.preventDefault();
- $(this).modal({
-  fadeDuration: 250
- });
-});
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+        <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $('a[href="#fademodal"]').click(function (event) {
+                event.preventDefault();
+                $(this).modal({
+                    fadeDuration: 250
+                });
+            });
 
             $('a[href="#fademodaldelayed"]').click(function (event) {
                 event.preventDefault();
@@ -45,6 +43,16 @@ $(function () {
 
         });
     </script>
+    
+ <!-- Modal HTML embedded directly into document -->
+    <div id="fademodal" class="modal">
+        <p>That was some smooth fade effect. I like it a lot!</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- Link to open the modal -->
+    <p><a href="#fademodal">Open Modal</a></p>
+
 
 
 [/html]
