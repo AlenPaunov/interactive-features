@@ -192,3 +192,60 @@ anime({
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 [/html]
 [/slide]
+
+[slide]
+# CSS Titles
+[html]
+<style>
+div.appeartext {
+ font-size:70px;
+ font-weight:bold;
+ color:#4794D3;
+ width:300px;
+ margin:90px auto;
+
+ -webkit-animation-name: appear;
+ -webkit-animation-duration: 3s;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 0s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-direction: normal;
+ -webkit-animation-fill-mode: both;
+
+ animation-name: appear;
+ animation-duration: 3s;
+ animation-timing-function: linear;
+ animation-delay: 0s;
+ animation-iteration-count: 1;
+ animation-direction: normal;
+ animation-fill-mode: both;
+
+}
+
+@-webkit-keyframes appear {
+  0%{
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes appear {
+  0%{
+	opacity: 0;
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+  }
+}
+</style>
+<div class='appeartext' >SoftUni</div>
+[/html]
+[/slide]
