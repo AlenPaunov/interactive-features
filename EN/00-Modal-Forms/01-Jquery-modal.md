@@ -18,15 +18,6 @@ p.custom-p {
 </style>
 
 <!-- Modal HTML embedded directly into document -->
-<div id="ex1" class="modal">
-  <p class="custom-p">Thanks for clicking. That felt good.</p>
-  <a href="#" rel="modal:close">Close</a>
-</div>
-
-<!-- Link to open the modal -->
-<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
-
-<!-- Modal HTML embedded directly into document -->
 <div id="fademodal" class="">
 <p>That was some smooth fade effect. I like it a lot!</p>
 <a href="#" rel="modal:close">Close</a>
