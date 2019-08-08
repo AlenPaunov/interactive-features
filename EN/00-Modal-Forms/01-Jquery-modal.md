@@ -61,7 +61,6 @@ p.custom-p {
 
 [slide]
 # Anime JS
-
 [html]
 <style>
   h1.ml8 {
@@ -80,6 +79,7 @@ p.custom-p {
   top: 0;
   bottom: 0;
   height: 1em;
+  text-align: center;
 }
 
 .ml8 .letters {
