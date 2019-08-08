@@ -254,9 +254,10 @@ div.appeartext {
 # Animate CSS
 
 [html]
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="yourPath/animatedModal.min.js"></script>
- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
 <!--Call your modal-->
     <a id="demo01" href="#animatedModal">DEMO01</a>
 
